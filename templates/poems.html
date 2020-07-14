@@ -1,0 +1,15 @@
+{% extends "nav.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-12">
+    {% for poem in poems %}
+    <p><a href="/poems/{{ poem.keyword }}">{{ poem.title }}</a></p>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
+

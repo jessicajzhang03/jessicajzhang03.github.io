@@ -1,10 +1,15 @@
 .container {
     padding-top: 3em;
-}
-
-p {
-    color: blue;
 } 
 
-.asy {
+
+.poem {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.indent {
+    margin-left: 0.25in;
 }

@@ -1,0 +1,19 @@
+{% extends "nav.html" %}
+
+{% block title %}{{ poem.title }}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+<div class="col-12">
+    <h2>{{ poem.title }}</h2>
+    <br> 
+    {% for line in poem.text %}
+    <p class='poem'>{{ line|safe }}</p>
+    {% endfor %}
+    <br> 
+    <p><em>–{{ poem.author }}</em></p>
+</div>
+</div>
+
+{% endblock %}
