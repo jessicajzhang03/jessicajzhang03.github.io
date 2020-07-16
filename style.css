@@ -1,0 +1,170 @@
+html {
+   font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    height: 100%; 
+    width: 100%; 
+}
+
+h1, h2 {
+    font-family: 'Proza Libre', sans-serif; 
+    font-weight: 700; 
+}
+
+p {
+    font-size: 20px; 
+}
+
+a {
+    /* color: #508991;  */
+    color: #ABB557; 
+    text-decoration: none; 
+}
+
+/* a:visited {
+    color: #ABB557; 
+} */
+
+a:hover {
+    color: #09BC8A; 
+}
+
+a:active {
+    color: #0BEAAB; 
+}
+
+/* BODY */ 
+
+.body {
+    position: absolute; 
+    width: 100%; 
+    top: 80px; 
+    bottom: 80px; 
+} 
+
+#about-me-text {
+    width: 75%; 
+    margin: 1em auto; 
+}
+
+.maintext {
+    width: 75%; 
+    margin: 1em auto 7em; 
+}
+
+/* PICTURE */ 
+
+#profpic {
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    max-height: 25%; 
+    max-width: 25%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    bottom: 0; 
+    width: 100%; 
+    height: 80px; 
+    background-color: #002952; 
+    color: whitesmoke; 
+    position: fixed; 
+}
+
+.footer p {
+    padding: 12px 2em; 
+    font-size: 16px;  
+} 
+
+.footitem a {
+    color: white; 
+}
+
+.footitem a:hover {
+    color: #09BC8A;  
+ }
+
+ .footitem a:active {
+     color: #15F4B5; 
+ }
+
+/* NAVIGATION BAR */ 
+nav {
+    overflow: hidden; 
+    font-size: 20px;
+    position: fixed; 
+    top: 0; 
+    height: 80px; 
+    width: 100%;
+    z-index: 1; 
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #002147;
+}
+  
+.navitem {
+    float: left;
+    line-height: 2em;
+}
+
+.navitem a {
+    display: inline-block;
+    color: #eee;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navitem a:hover, .dropdown:hover {
+    background-color: #001329;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown a {
+    min-width: 150px; 
+    text-align: left; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    line-height: 1.5em; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #aaa;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+#contact-nav {
+    float: right; 
+}
