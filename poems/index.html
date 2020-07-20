@@ -1,16 +1,14 @@
 <html>
 <head>
-{% if title %}
-<title>{{ title }}</title>
-{% else %}
-<title>Jessica J. Zhang</title>
-{% endif %}
+
+<title>Poems</title>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}" sizes="16x16" />
+<link rel="stylesheet" href="/static/style.css" />
+<link rel="icon" type="image/png" href="/static/images/favicon.ico" sizes="16x16" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -25,26 +23,36 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script> 
 
-{% block scripts %}
-{% endblock %} 
 
-{% block styles %}
-{% endblock %}
+ 
+
+
+
 </head>
 
 <body>
 <nav>
     <ul class="navbar">
-        <li class="navitem"><a href="{{ url_for('index') }}">HOME</a></li>
-        <li class="navitem"><a href="{{ url_for('math') }}">MATH</a></li>
-        <li class="navitem"><a href="{{ url_for('poems') }}">POEMS</a></li>
-        <li class="navitem"><a href="{{ url_for('fun') }}">FUN THINGS</a></li>
+        <li class="navitem"><a href="/index.html">HOME</a></li>
+        <li class="navitem"><a href="/math.html">MATH</a></li>
+        <li class="navitem"><a href="/poems/">POEMS</a></li>
+        <li class="navitem"><a href="/fun.html">FUN THINGS</a></li>
         <!-- <li class="navitem" id="blog-nav"><a href="blog/blog">BLOG</a></li> -->
     </ul>
 </nav>
 
 <div class="main-wrapper">
-    {% block content %}{% endblock %}
+    
+<h1>Some of my favorite poems</h1>
+
+<ul>
+
+<li><a href="/poems/le-lac.html">Le Lac</a> by Lamartine</li>
+
+<li><a href="/poems/first-fig.html">First Fig</a> by Edna St. Vincent Millay</li>
+
+</ul>
+
 </div>
 
 <footer>
