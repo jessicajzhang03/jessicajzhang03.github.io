@@ -6,5 +6,8 @@
         "maintext",
         "navitem",
         "profpic"
-    ]
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false
 }

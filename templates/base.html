@@ -1,0 +1,61 @@
+<html>
+<head>
+{% if title %}
+<title>{{ title }}</title>
+{% else %}
+<title>Jessica J. Zhang</title>
+{% endif %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}" sizes="16x16" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+</script>
+<script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script> 
+
+{% block scripts %}
+{% endblock %} 
+
+{% block styles %}
+{% endblock %}
+</head>
+
+<body>
+<nav>
+    <ul class="navbar">
+        <li class="navitem"><a href="{{ url_for('index') }}">HOME</a></li>
+        <li class="navitem"><a href="{{ url_for('math') }}">MATH</a></li>
+        <li class="navitem"><a href="{{ url_for('poems') }}">POEMS</a></li>
+        <li class="navitem"><a href="{{ url_for('fun') }}">FUN THINGS</a></li>
+        <!-- <li class="navitem" id="blog-nav"><a href="blog/blog">BLOG</a></li> -->
+    </ul>
+</nav>
+
+<div class="main-wrapper">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    <p style="text-align: center">
+        <span class="footitem" style="float: left;">Contact: jessicajzhang03 [at] gmail [dot] com</span>
+        <!-- <span class="footitem">
+            <a href="index.html">Home</a> | <a href="sitemap.html">Sitemap</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a>
+            <small>&copy; Copyright 2020, Jessica J. Zhang</small>
+        </span> -->
+        <span class="footitem" style="float: right;">Site designed by Jessica Zhang</span>
+    </p>
+</footer>
+</body>
+</html>

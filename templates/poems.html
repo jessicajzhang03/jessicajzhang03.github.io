@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Some of my favorite poems</h1>
+
+<ul>
+{% for poem in poems %}
+<li><a href="{{ url_for('poem',keyword=poem.keyword) }}">{{ poem.title }}</a> by {{ poem.author }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
