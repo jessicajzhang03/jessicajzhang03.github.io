@@ -54,6 +54,9 @@ a:active {
     margin: auto; 
 }
 
+.center {
+    text-align: center; 
+}
 /* NAVIGATION BAR */ 
 nav {
     overflow: hidden; 
