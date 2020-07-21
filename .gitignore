@@ -1,4 +1,6 @@
 old/
 .vscode/ 
 __pycache__/
-.flaskenv
+.flaskenv 
+.DS_Store 
+**/.DS_Store
