@@ -24,6 +24,10 @@ p,a,li {
     font-size: 20px; 
 }
 
+li {
+    padding-bottom: 0.5em; 
+}
+
 a {
     /* color: #508991;  */
     color: #ABB557; 
@@ -162,4 +166,20 @@ footer p {
     font-size: 16px; 
     /*float: right; */
     font-style: italic;
+} 
+
+/* FUN */ 
+.left-hand-post {
+    margin-top: 3em; 
+}
+
+.left-hand-day {
+    color: #231791b9; 
+}
+
+.left-hand-pic {
+    border: thin solid gray; 
+    position: relative; 
+    width: 90%; 
+    float: right; 
 }
