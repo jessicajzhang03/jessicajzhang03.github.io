@@ -3,12 +3,14 @@
 \usepackage{jjz}
 \usetikzlibrary{cd}
 \usepackage[nameinlink]{cleveref}
+\usepackage{mathrsfs}
 \usepackage{subfiles} 
+\usepackage{bookmark}
 
 \theoremstyle{definition} 
 \newtheorem{intex}{Exercise}[section]
 \newenvironment{exercise}{\begin{intex}\label{\theintex}}{\end{intex}}
-\crefname{intex}{Exercise}{Exercises}
+\crefname{intex}{exercise}{exercises}
 
 \setlist[enumerate,1]{label=(\roman*),leftmargin=\parindent}
 \setlist{parsep=0pt,listparindent=\parindent}
@@ -17,17 +19,19 @@
 \newcommand*\II{\mathbb I}
 \DeclareMathOperator\obj{obj}
 \DeclareMathOperator\Hom{Hom}
-\newcommand*\cat[1]{\mathcal{#1}}
-\newcommand*\Cat[1]{\textbf{#1}}
-\newcommand*\Top{\Cat{Top}}
-\newcommand*\Set{\Cat{Set}}
-\DeclareMathOperator\im{im}
+\renewcommand*\cat[1]{\mathscr{#1}}
+\newcommand*\Cat[1]{\mathsf{#1}}
+\renewcommand*\Top{\Cat{Top}}
+\renewcommand*\Set{\Cat{Set}}
+\newcommand*\Comp{\Cat{Comp}}
+\newcommand*\Ab{\Cat{Ab}}
 \newcommand{\ecls}{%
   {\sim}%
 }
-\newcommand\ep{\varepsilon} 
 \DeclareMathOperator\rel{rel}
 \newcommand\Idot{\dot\II}
+\DeclareMathOperator\cls{cls}
+\DeclareMathOperator\rank{rank}
 
 \setcounter{section}{-1} 
 \setcounter{secnumdepth}{1}
@@ -71,6 +75,14 @@
 \newpage 
 
 \subfile{chapters/chapter3/chapter3.tex} 
+
+\newpage 
+
+\subfile{chapters/chapter4/chapter4.tex} 
+
+\newpage 
+
+\subfile{chapters/chapter5/chapter5.tex}
 
 \end{document}
 
