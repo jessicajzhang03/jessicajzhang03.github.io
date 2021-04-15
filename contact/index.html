@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<title>Contact geometry</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/static/style.css" />
+<link rel="icon" type="image/png" href="/static/images/favicon.ico" sizes="16x16" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+</script>
+<script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script> 
+
+
+ 
+
+
+
+</head>
+
+<body>
+<nav>
+    <ul class="navbar">
+        <li class="navitem"><a href="/">HOME</a></li>
+        <li class="navitem"><a href="/math/">MATH</a></li>
+        <!-- <li class="navitem"><a href="/poems/">POEMS</a></li>
+        <li class="navitem"><a href="/fun/">FUN THINGS</a></li> -->
+        <!-- <li class="navitem" id="blog-nav"><a href="blog/blog">BLOG</a></li> -->
+    </ul>
+</nav>
+
+<div class="main-wrapper">
+    
+<h1>Tight and overtwisted contact structures</h1>
+<p>
+    The idea of a contact structure is to attach a plane to every point of a 3-manifold in a twisty way.
+    In particular, no surface can be everywhere tangent to the contact planes.
+    This condition translates roughly into a <em>non-integrability condition</em>, so we say that a contact structure is a <em>maximally non-integrable 2-plane distribution</em>.
+</p>
+
+<p>
+    There are two kinds of contact structures: <strong>tight</strong> and <strong>overtwisted</strong>.
+    The idea is that a tight contact structure doesn't contain any "unnecessary twisting," whereas an overtwisted one contains a disk such that, as we look at planes along radial rays, the contact planes twist all the way around (i.e., 180 degrees around).
+</p>
+
+<p>Use the mouse to rotate. To toggle automatic rotating, click or press the space bar.</p>
+<ul>
+<li>t: Toggles visibility of the solid torus</li>
+<li>o: Toggles tight vs. overtwisted contact structures</li>
+</ul>
+
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://editor.p5js.org/jessicajzhang03/embed/GBfUlBUJo" width="100%" height="80%"></iframe>
+</div>
+
+<p>If this doesn't work, you can view the animation here: <a href=https://editor.p5js.org/jessicajzhang03/present/GBfUlBUJo target="_blank">https://editor.p5js.org/jessicajzhang03/present/GBfUlBUJo</a> (this will open a new tab)</p>
+
+</div>
+
+<footer>
+    <p style="text-align: center">
+        <span class="footitem" style="float: left;">Contact: jessicajzhang03 [at] gmail [dot] com</span>
+        <!-- <span class="footitem">
+            <a href="index.html">Home</a> | <a href="sitemap.html">Sitemap</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a>
+            <small>&copy; Copyright 2020, Jessica J. Zhang</small>
+        </span> -->
+        <span class="footitem" style="float: right;">Site designed by Jessica Zhang</span>
+    </p>
+</footer>
+</body>
+</html>
