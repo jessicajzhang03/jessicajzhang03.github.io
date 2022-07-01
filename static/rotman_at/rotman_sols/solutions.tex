@@ -7,6 +7,7 @@
 \usepackage{subfiles} 
 \usepackage{bookmark}
 \usepackage{asymptote}
+\usepackage{wasysym}
 
 \theoremstyle{definition} 
 \newtheorem{intex}{Exercise}[section]
@@ -18,22 +19,22 @@
 \crefname{enumi}{Exercise~\theintex~Part}{Exercise~\theintex~Parts}
 
 \newcommand*\II{\mathbb I}
-\DeclareMathOperator\obj{obj}
-\DeclareMathOperator\Hom{Hom}
 \renewcommand*\cat[1]{\mathscr{#1}}
-\newcommand*\Cat[1]{\mathsf{#1}}
+\newcommand*\Cat[1]{\mathbf{#1}}
 \renewcommand*\Top{\Cat{Top}}
 \renewcommand*\Set{\Cat{Set}}
 \newcommand*\Comp{\Cat{Comp}}
-%\newcommand*\Ab{\Cat{Ab}}
+\renewcommand*\Ab{\Cat{Ab}}
+\renewcommand*\Grp{\Cat{Grp}}
 \newcommand{\ecls}{%
   {\sim}%
 }
 \newcommand*\oo[1]{o(#1)}
 \newcommand*\ee[1]{\textrm{e}(#1)}
+\newcommand*\homeo{\approx}
+\newcommand\Idot{\dot\II}
 
 \DeclareMathOperator\rel{rel}
-\newcommand\Idot{\dot\II}
 \DeclareMathOperator\cls{cls}
 \DeclareMathOperator\rank{rank}
 \DeclareMathOperator\Sd{Sd}
@@ -41,7 +42,13 @@
 \DeclareMathOperator\Vt{Vert}
 \DeclareMathOperator\diam{diam}
 \DeclareMathOperator\mesh{mesh}
-
+\DeclareMathOperator\obj{obj}
+\DeclareMathOperator\Hom{Hom}
+\DeclareMathOperator\Nat{Nat}
+\DeclareMathOperator\tr{tr}
+\DeclareMathOperator\Tor{Tor}
+\DeclareMathOperator\Cov{Cov}
+\DeclareMathOperator\Aut{Aut}
 
 \setcounter{section}{-1} 
 \setcounter{secnumdepth}{1}
@@ -101,6 +108,22 @@
 \newpage 
 
 \subfile{chapters/chapter7/chapter7.tex}
+
+\newpage 
+
+\subfile{chapters/chapter8/chapter8.tex}
+
+\newpage
+
+\subfile{chapters/chapter9/chapter9.tex}
+
+\newpage
+
+\subfile{chapters/chapter10/chapter10.tex}
+
+\newpage
+
+\subfile{chapters/chapter11/chapter11.tex}
 
 \end{document}
 
