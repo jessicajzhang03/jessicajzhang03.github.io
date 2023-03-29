@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/static/style.css" />
 <link rel="icon" type="image/png" href="/static/images/favicon.ico" sizes="16x16" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -31,24 +32,22 @@
 </head>
 
 <body>
-<nav>
-    <ul class="navbar">
-        <li class="navitem"><a href="/">HOME</a></li>
-        <li class="navitem"><a href="/math/">MATH</a></li>
-        <!-- <li class="navitem"><a href="/poems/">POEMS</a></li>
-        <li class="navitem"><a href="/fun/">FUN THINGS</a></li> -->
-        <!-- <li class="navitem" id="blog-nav"><a href="blog/blog">BLOG</a></li> -->
-    </ul>
-</nav>
+<div class="navbar" id="myNavbar">
+    <a href="/">HOME</a>
+    <a href="/math/">MATH</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 <div class="main-wrapper">
     
 <img src="/static/images/jjz.jpg" id="profpic"/>
 <h1 style="text-align: center;">Hi! I'm Jessica Zhang.</h1>
 
-<p>I'm a rising sophomore at Harvard, planning to major in mathematics. I'm particularly interested in geometry and topology. This summer, I'm conducting research with Professor Roger Casals as part of the <a href="https://reu.math.ucdavis.edu/index.php">UC Davis Pure and Applied Math REU</a>. Previously, I was named a <a href="https://www.societyforscience.org/regeneron-sts/2021-finalists/">Regeneron STS Finalist</a> and won the <a href="https://www.ams.org/prizes-awards/paview.cgi?parent_id=22">Karl Menger Memorial</a> Award for my research in the <a href="https://math.mit.edu/research/highschool/primes/index.php">MIT PRIMES-USA program</a>. Before that, I attended <a href="https://promys.org/">PROMYS</a> for two summers. Check out my full resume <a href="/static/resume/resume.pdf">here</a>.</p>
+<p>I'm a sophomore at Harvard, majoring in mathematics. I'm particularly interested in low-dimensional topology. Last summer, I researched arboreal skeleta of Lagrangian handlebodies at the <a href="https://reu.math.ucdavis.edu/index.php">UC Davis Pure and Applied Math REU</a>. Previously, I was named a <a href="https://www.societyforscience.org/regeneron-sts/2021-finalists/">Regeneron STS Finalist</a> and won the <a href="https://www.ams.org/prizes-awards/paview.cgi?parent_id=22">Karl Menger Memorial Award</a> for proving a formula for the number of non-isotopic tight contact structures on the solid torus. Before that, I attended <a href="https://promys.org/">PROMYS</a> for two summers. Check out my full resume <a href="/static/resume/resume.pdf">here</a>.</p>
 
-<p>In my free time, I like reading books, listening to music, doing the crossword, and otherwise pretending to be productive. As a reward for reading this all, here's a useless fact for you: Russet Burbank potatoes are all male and all sterile; indeed, most commercially potatoes do not reproduce at all&mdash;<a href="https://web.archive.org/web/20201030023408/http://potatogenome.berkeley.edu/nsf5/potato_biology/reproduction.php">they're all just <em>clones</em> of each other</a>!</p>
+<p>In my free time, I like doing the crossword, <a href="https://www.theharvardadvocate.com/">talking about poems</a>, pretending to read more poems than I do, and drinking smoothies. Please send me smoothie recommendations (anywhere, but especially Boston)! As an entirely unrelated reward for reading this all, here's a useless fact for you: Russet Burbank potatoes are all male and all sterile; in fact, most commercially potatoes do not reproduce at all&mdash;<a href="https://web.archive.org/web/20201030023408/http://potatogenome.berkeley.edu/nsf5/potato_biology/reproduction.php">they're all just clones of each other</a>!</p>
 
 </div>
 
@@ -62,5 +61,17 @@
         <span class="footitem" style="float: right;">Site designed by Jessica Zhang</span>
     </p>
 </footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+</script>
+
 </body>
 </html>

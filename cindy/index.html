@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/static/style.css" />
 <link rel="icon" type="image/png" href="/static/images/favicon.ico" sizes="16x16" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -48,15 +49,13 @@
 </head>
 
 <body>
-<nav>
-    <ul class="navbar">
-        <li class="navitem"><a href="/">HOME</a></li>
-        <li class="navitem"><a href="/math/">MATH</a></li>
-        <!-- <li class="navitem"><a href="/poems/">POEMS</a></li>
-        <li class="navitem"><a href="/fun/">FUN THINGS</a></li> -->
-        <!-- <li class="navitem" id="blog-nav"><a href="blog/blog">BLOG</a></li> -->
-    </ul>
-</nav>
+<div class="navbar" id="myNavbar">
+    <a href="/">HOME</a>
+    <a href="/math/">MATH</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 <div class="main-wrapper">
     
@@ -78,5 +77,17 @@
         <span class="footitem" style="float: right;">Site designed by Jessica Zhang</span>
     </p>
 </footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+</script>
+
 </body>
 </html>

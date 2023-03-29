@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/static/style.css" />
 <link rel="icon" type="image/png" href="/static/images/favicon.ico" sizes="16x16" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -31,22 +32,20 @@
 </head>
 
 <body>
-<nav>
-    <ul class="navbar">
-        <li class="navitem"><a href="/">HOME</a></li>
-        <li class="navitem"><a href="/math/">MATH</a></li>
-        <!-- <li class="navitem"><a href="/poems/">POEMS</a></li>
-        <li class="navitem"><a href="/fun/">FUN THINGS</a></li> -->
-        <!-- <li class="navitem" id="blog-nav"><a href="blog/blog">BLOG</a></li> -->
-    </ul>
-</nav>
+<div class="navbar" id="myNavbar">
+    <a href="/">HOME</a>
+    <a href="/math/">MATH</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 <div class="main-wrapper">
     
 <h1>Math</h1>
 
 <h3>Expository articles</h3>
-<p><em>(Please insert the necessary caveat that I, like everyone else, am stupid. Hence errors and lies may and almost certainly do abound.)</em></p>
+<p><em>(Please insert the necessary caveat that <a href="https://www.youtube.com/watch?v=wxystpPE1xU">I am stupid</a>. Errors and lies certainly abound. Consider them Easter eggs. Or just consider them lies.)</em></p>
 <ul>
     <li><a href="/static/expository/arnold-conjecture.pdf">A History of the Arnol'd Conjecture</a></li>
     <li><a href="/static/expository/morse-theory.pdf">Morse Theory of Critical Points</a></li>
@@ -56,8 +55,8 @@
 
 <h3>Other</h3>
 <ul>
-    <li>An <a href="/math/contact/">only somewhat horrible visualization</a> of contact structures on a solid torus.</li>
-    <li>A <a href="/static/rotman_at/rotman_sols/solutions.pdf">pdf</a> of some incomplete solutions to Rotman's <em>Introduction to Algebraic Topology</em>. It's missing Chapter 12 and will likely not be updated, more or less because I'm lazy.</li>
+    <li>A <a href="/math/contact/">visualization of contact structures on a solid torus</a>. I have no idea how this would ever help somebody understand contact structures, but oh well.</li>
+    <li>A <a href="/static/rotman_at/rotman_sols/solutions.pdf">pdf</a> of some incomplete solutions to Rotman's <em>Introduction to Algebraic Topology</em>. It's missing Chapter 12 (on cohomology) and will likely not be updated because I'm lazy.</li>
 </ul>
 
 </div>
@@ -72,5 +71,17 @@
         <span class="footitem" style="float: right;">Site designed by Jessica Zhang</span>
     </p>
 </footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+</script>
+
 </body>
 </html>
