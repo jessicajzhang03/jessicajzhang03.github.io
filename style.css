@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    min-height: 100vh - 100px;
+    max-width: 950px;
+    margin: 0px auto;
+    padding: 50px;
+    font-family: 'EB Garamond';
+    font-size: 1.6rem
+}
+
+sup { vertical-align: top; font-size: 0.6em; }
